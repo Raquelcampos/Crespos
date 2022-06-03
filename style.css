@@ -11,6 +11,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: white;
+    z-index:999 ;
 }
 .todecacho{
     width: 60px;
@@ -51,16 +52,18 @@ input{
 }
 main{
     width: 100%;
-    height: 200vh;
+}
+.homem{
+    width: 100%;
     background-image: url("imagens/cabeludo.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.text1{
+.text{
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 20% 10% 0% 15%;
+    padding: 20% 10% 8% 15%;
 }
 h1{
     color:white;
@@ -68,7 +71,7 @@ h1{
     font-size: 4rem;
 }
 .p1{
-    color:azure;
+    color:white;
     font-weight: 100;
     width: 38%;
     text-align: left;
@@ -76,12 +79,187 @@ h1{
     margin-left: 32%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.passos{
+    background-color: #9767A9;
+    color:white;
+    display: flex;
+    padding: 5%;
+}
+.h22{
+    width: 52%;
+    font-size: 3rem;
+}
+.p2{ 
+    width: 40%;
+    font-size: 1.5rem;
+}
+.img1e2, .img3e4, .img5e6, .img7e8{
+
+    width: 80%;
+    height:100vh;
+    color:white;
+    position: relative;
+    left: 10%;
+}
+.espelho{
+    width: 45%;
+    position: absolute;
+    top:-12%;
+    left: 0;
+}
+.maju, .rainha, .lavar{
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cacho{
+    width: 40%;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+}
+.praia, .beijo, .cabelobranco{
+    width: 45%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.text1{
+    background-color: #9767A9;
+    width: 35%;
+    position: absolute;
+    top:27%;
+    left: 5%;
+  
+}
+.text2, .text4, .text6{
+    background-color:  #9767A9;
+    width: 35%;
+    position: absolute;
+    bottom: -27%;
+    right: 5%;
+}
+.text3, .text5, .text7{
+    background-color: #9767A9;
+    width: 30%;
+    position: absolute;
+    top:50%;
+    left: 8%;
+  
+}
+.h31{
+
+ padding-left: 5%;
+ font-size: 1.5rem;
+}
+.p3{
+  
+    padding: 5%;
+}
+
+.imagens{
+    width: 100%;
+    padding: 0 5% 0 5%;
+    height: 100vh;
+    display: flex;
+}
+.caixa{
+ width: 60%;
+}
+.cima{
+    display: flex;
+    width: 100%;
+    height: 70%;
+
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgsmeio{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.fig1, .fig4{
+    width: 50%;
+}
+.fig2{
+    width: 25%;
+}
+.fig3{
+    width: 25%;
+}
+.baixo{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.fig5{
+    width: 50%;
+    display: flex;
+}
+.ldireito{
+    width: 40%;
+    display: flex;
+}
+.fig6{
+    width: 60%;
+}
+.fig7{
+    width: 40%;
+}
+.tranças{
+    width: 100%;
+    height: 30%;
+}
+.barba{
+    width: 100%;
+    height: 70%;
+}
+footer{
+    background-color: #9767A9;
+    margin-top: 3%;
+    padding: 2% 7% 2% 7%;
+}
+.p4{
+    width: 60%;
+    color:white;
+}
 @media (max-width:1153px){
     h1{
         font-size: 3rem;
     }
     .p1{
         font-size: 1.5rem;
+    }
+    .h22{
+        width: 55%;
+        font-size: 2.2rem;
+    }
+    .p2{ 
+        width: 40%;
+        font-size: 1rem;
+    }
+    .text2{
+        bottom: -25%;
+    }
+   .espelho{
+       top:0;
+   }
+    .h31{
+        font-size: 1rem;
+    }
+    .p3{
+        font-size: 0.7rem;
+    }
+    .text4, .text6{
+        bottom: -15%;
+    }
+    .text1, .text3, .text5, .text7{
+        top:35%;
     }
 }
 @media (max-width:924px) {
@@ -91,12 +269,20 @@ h1{
     ul{
         font-size: 0.7rem;
     }
-    .text1{
+    .text{
         padding-right: 5%;
     }
     .p1{
        
         width: 50%;
+    }
+    .h22{
+        width: 60%;
+        font-size: 1.6rem;
+    }
+    .p2{ 
+        width: 35%;
+        font-size: 0.8rem;
     }
 }
 
@@ -117,6 +303,64 @@ h1{
     input{
         margin-left: -20%;
     }
+    .text2{
+        bottom: -30%;
+    }
+    .text4, .text6{
+        bottom: -20%;
+    }
+
+}
+@media (max-width:800px){
+    .img1e2, .img3e4, .img5e6, .img7e8{
+        height:218vh;
+    }
+    .espelho,.praia, .beijo, .cabelobranco{
+        width: 90%;
+        left: 5%;
+        top:5%;
+    }
+    .maju, .rainha, .lavar{
+        width: 90%;
+        right: 5%;
+        top:55%
+    }
+    .cacho{
+        width: 50%;
+        bottom: 20%;
+        right: 25%;
+    }
+    .text1,.text3, .text5, .text7{
+        width: 100%;
+        top:30%;
+        left: 0; 
+        text-align: center;
+    }
+    .text2, .text4, .text6{
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+  .h31{
+      font-size: 1.5rem;
+  }
+  .p3{
+      font-size: 1rem;
+  }
+  .imagens{
+      flex-direction: column;
+      height: 200vh;
+  }
+  .caixa{
+      width: 100%;
+      height: 50%;
+  }
+  .ldireito{
+      width: 100%;
+      height: 50%;
+  }
+  
 }
 @media (max-width:791px){
     h1{
@@ -126,18 +370,33 @@ h1{
         font-size: 1rem;
     }
 }
+@media (max-width:618px){
+    .passos{
+        flex-direction: column;
+    
+    }
+    .h22{
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    .p2{ 
+        margin-top: 5%;
+        width: 90%;
+        font-size: 1.4rem;
+    }
+}
 @media (max-width:531px){
     input{
         display: none;
     }
-    main{
+    .homem{
     background-size: 160%;
-    background-position-y: 5%;
+    background-position-y: 0%;
     background-position-x: 12%;
     }
-    .text1{
+    .text{
         flex-direction: column;
-        padding: 20% 25% 0% 0%;
+        padding: 20% 25% 5% 0%;
     }
     .p1{
         margin-left: 12%;
@@ -148,9 +407,42 @@ h1{
         width:80%;
         font-size: 3rem;
     }
+    .h22{
+        
+        font-size: 2rem;
+    }
+    .text1,.text3, .text5, .text7{
+        top:25%;
+    }
+}
+@media (max-width:462px){
+    .h22{
+        
+        font-size: 1.5rem;
+    }
+    .p2{ 
+        
+        font-size: 1rem;
+    }
+}
+@media (max-width:400px){
+    .text{
+
+        padding: 20% 25% 0% 0%;
+    }   
+    .text1,.text3, .text5, .text7{
+        top:20%;
+    }
 }
 @media (max-width:355px){
+    h1{
+        font-size:2.8rem;
+    }
     .p1{
         font-size: 1.2rem;
+    }
+    .h22{
+        width: 93%;
+        font-size: 1.3rem;
     }
 }
